@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\PorfolioController;
-use App\Http\Controllers\ImageController;
+use App\Http\Controllers\API\ImageController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
