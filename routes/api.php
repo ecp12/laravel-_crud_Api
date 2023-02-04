@@ -6,4 +6,4 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::apiResource('porfolios', PorfolioController::class );
-Route::apiResource('image', ImageController::class);
+Route::post('images', [ImageController::class, 'upload']);
