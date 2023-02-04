@@ -3,16 +3,15 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ImageStoreRequest;
 use App\Models\Image;
 use Validator;
 use Illuminate\Http\Request;
 
 
 
-class ImageController extends Controller
+class APIImageController extends Controller
 {
-    public function imageStore(ImageStoreRequest $request)
+    public function imageStore(Request $request)
     {
 
         if(!$request->hasFile('fileName')) {

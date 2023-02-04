@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\PorfolioController;
-use App\Http\Controllers\API\ImageController;
+use App\Http\Controllers\APIImageController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::apiResource('porfolios', PorfolioController::class );
-Route::post('images', [ImageController::class, 'upload']);
+Route::post('images', [APIImageController::class, 'upload']);
