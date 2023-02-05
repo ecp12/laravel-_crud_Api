@@ -29,17 +29,7 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(StorePostRequest $request)
     {
         $post = Post::create($request->all());
@@ -59,7 +49,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return $post;
     }
 
     /**
@@ -68,18 +58,7 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Post  $post
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(StorePostRequest $request, Post $post)
     {
         $post->update($request->all());
